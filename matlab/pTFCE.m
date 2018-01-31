@@ -11,7 +11,8 @@
 %| Department of Radiology
 %| Bingel Lab
 %|
-%| An SPM toolbox to perform Threshold-free Cluster Enhancement
+%| An SPM toolbox to perform pTFCE
+%| (probabilistic Threshold-free Cluster Enhancement)
 %|
 %|
 %| 
