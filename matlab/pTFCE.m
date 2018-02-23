@@ -7,7 +7,7 @@
 %| Version 1.00
 %|
 %|
-%| University Clinic Essen
+%| University Hospital Essen
 %| Department of Radiology
 %| Bingel Lab
 %|
