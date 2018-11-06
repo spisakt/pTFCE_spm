@@ -39,7 +39,7 @@
 %| WEBSITE                                                               |
 %| https://github.com/spisakt/pTFCE                                      |
 %+-----------------------------------------------------------------------+
-%| Version 0.1.0                                                         |
+%| Version 0.1.1                                                         |
 %+-----------------------------------------------------------------------+
 %| University Hospital Essen                                             |
 %| Department of Neurology                                               |
