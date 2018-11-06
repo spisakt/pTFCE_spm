@@ -1,0 +1,9 @@
+#change.log
+
+v.0.1.1 (06.11.2018)
+- bugfix (double quote converted to single quote)
+
+v.0.1.0 (22.10.2018)
+- post-publication releaase
+- compatibility to the pTFCE SPM Toolbox (https://github.com/spisakt/pTFCE/wiki/4.-SPM-Toolbox)
+- citation added
