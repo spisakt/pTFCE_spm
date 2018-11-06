@@ -157,9 +157,9 @@ mask = spm_read_vols(M);
 
 % convert it to Z-score (from T or F)
 
-if strcmp(STAT,"T")
+if strcmp(STAT,'T')
     imgZ = img_t2z(img, DOF, 1);
-elseif strcmp(STAT,"F")
+elseif strcmp(STAT,'F')
     % Note that this is a hack!!
     % ToDo: find a better way to get DOF for F-tests
     % must be very simple...
@@ -199,9 +199,9 @@ end
 
 % convert back to original statistics (T or F)
 
-if strcmp(STAT,"T")
+if strcmp(STAT,'T')
     img_out = -tinv(ptfce_p, DOF);
-elseif strcmp(STAT,"F")
+elseif strcmp(STAT,'F')
     img_out = -finv(ptfce_p, DOF1, DOF2);
 end
 
