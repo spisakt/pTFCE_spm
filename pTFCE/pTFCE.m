@@ -135,7 +135,7 @@ if sum(isinf(imgZ))>0
 end
 
 logpmin=0;
-logpmax=-log(normcdf(max(imgZ(:)), "upper"));
+logpmax=-log(normcdf(max(imgZ(:)), 'upper'));
 logp_thres=linspace(logpmin, logpmax, Nh);
 dh=logp_thres(2)-logp_thres(1);
 p_thres=exp(-logp_thres);
@@ -232,7 +232,7 @@ end
 % @examples
 function Es=Es(h, V, Rd)
   h2=h.^2;
-  ret = log(V) + log(normcdf(h, "upper"));
+  ret = log(V) + log(normcdf(h, 'upper'));
   
   h2=h2(h>=1.1); % GRF is inaccurate, use the estimation of FSL
   ret(h>=1.1) = ret(h>=1.1) - ( log(Rd)+log(h2-1)-h2/2+-2*log(2*pi));
@@ -245,7 +245,7 @@ function dvox=dvox(h) % PDF of Z threshold/voxel value
 end
 
 function pvox=pvox(h) % p-value for voxel value
-  pvox = normcdf(h, "upper");
+  pvox = normcdf(h, 'upper');
 end
 
 
