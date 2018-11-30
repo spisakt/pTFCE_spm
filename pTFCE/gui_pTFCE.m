@@ -160,14 +160,17 @@ mask = spm_read_vols(M);
 if strcmp(STAT,'T')
     imgZ = img_t2z(img, DOF, 1);
 elseif strcmp(STAT,'F')
+    error('F-tests not yet supported! Please contact the authors');
     % Note that this is a hack!!
     % ToDo: find a better way to get DOF for F-tests
     % must be very simple...
-    x=strsplit('SPM{F_[1.0,11.0]} - contrast 7: f-test', '[')
-    xx=strsplit(x{2}, ',')
-    DOF1=str2num(xx{1})
-    xxx=strsplit(xx{2}, ']')
-    DOF2=str2num(xxx{1})
+    %x=strsplit('SPM{F_[1.0,11.0]} - contrast 7: f-test', '[')
+    %xx=strsplit(x{2}, ',')
+    %DOF1=str2num(xx{1})
+    %xxx=strsplit(xx{2}, ']')
+    %DOF2=str2num(xxx{1})
+    DOF2=DOF
+    DOF1=SPM.xCon(Iptfce).eidf
     imgZ = img_f2z(img, DOF1, DOF2, 1);
 else
     error('Statistical parameter type not supported: %s',STAT);

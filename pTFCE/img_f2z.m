@@ -1,7 +1,7 @@
 function z = img_f2z(f, d1, d2, tails)
 
 if d1 == 1
-    z = t2z(sqrt(f), d2, tails);
+    z = img_t2z(sqrt(f), d2, tails);
     return
 end
 
