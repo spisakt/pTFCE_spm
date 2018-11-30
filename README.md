@@ -1,6 +1,6 @@
 # pTFCE SPM Toolbox
 
-## v0.1.1
+## v0.1.2
 
 For more information, check out the [project pages](https://spisakt.github.io/pTFCE/)!
 
