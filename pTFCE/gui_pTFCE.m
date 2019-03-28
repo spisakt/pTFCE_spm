@@ -160,7 +160,7 @@ mask = spm_read_vols(M);
 if strcmp(STAT,'T')
     imgZ = img_t2z(img, DOF, 1);
 elseif strcmp(STAT,'F')
-    error('F-tests not yet supported! Please contact the authors');
+    %error('F-tests not yet supported! Please contact the authors');
     % Note that this is a hack!!
     % ToDo: find a better way to get DOF for F-tests
     % must be very simple...
