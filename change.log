@@ -1,5 +1,8 @@
 #change.log
 
+v.0.1.3 (28.03.2019)
+- enhancement of SPM F-tests is possible
+
 v.0.1.2 (30.11.2018)
 - bugfix: function name for statistocal conversion fixed
 - minor enhancement: error messages
