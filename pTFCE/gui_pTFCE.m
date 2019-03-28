@@ -195,17 +195,17 @@ end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % developer: write out Z-score image for validation
-%V_ptfce = V;
-%V_ptfce.fname = 'test_pTFCE_Z.nii';
-%spm_write_vol(V_ptfce,pTFCE_Z);
+V_ptfce = V;
+V_ptfce.fname = 'test_pTFCE_p.nii';
+spm_write_vol(V_ptfce,ptfce_p);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % convert back to original statistics (T or F)
 
 if strcmp(STAT,'T')
-    img_out = -tinv(ptfce_p, DOF);
+    img_out = tinv(1-ptfce_p, DOF);
 elseif strcmp(STAT,'F')
-    img_out = -finv(ptfce_p, DOF1, DOF2);
+    img_out = finv(1-ptfce_p, DOF1, DOF2);
 end
 
 % save volume
