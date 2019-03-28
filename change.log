@@ -1,5 +1,9 @@
 #change.log
 
+v.0.1.2 (30.11.2018)
+- bugfix: function name for statistocal conversion fixed
+- minor enhancement: error messages
+
 v.0.1.1 (06.11.2018)
 - bugfix (double quote converted to single quote)
 
