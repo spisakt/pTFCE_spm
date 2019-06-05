@@ -2,7 +2,7 @@ function [pTFCE_Z, pTFCE_p] = pTFCE(imgZ,mask, Rd, V, Nh, Zest, C, verbose)
 % +-----------------------------------------------------------------------+
 % |PTFCE core function for pTFCE enhancement                              | 
 % +-----------------------------------------------------------------------+
-% | Version 0.1.1                                                         |
+% | Version 0.2.0                                                        |
 % +-----------------------------------------------------------------------+
 % | DESCRIPTION                                                           |
 % +-----------------------------------------------------------------------+
@@ -267,7 +267,10 @@ function dclust=dclust(h, V, Rd, c, ZestThr) % PDF of cluster extent, given h th
       return
     end
     fun = @(x) dcl(x,V,Rd,c,ZestThr);
-    dclust = dcl(h, V, Rd, c, ZestThr) / integral(fun, -Inf, Inf);
+    %  patch: the normalising constant can be ignored here as the expression will be normalised again later
+    % So we spare a costly numarical integration and get much faster!
+    % Tests still pass for the R-package, with a reasonable tolerance
+    dclust = dcl(h, V, Rd, c, ZestThr) %/ integral(fun, -Inf, Inf);
 end
 
 
