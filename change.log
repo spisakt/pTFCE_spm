@@ -1,7 +1,7 @@
 #change.log
 
-v.0.2.0 (05.06.2019)
-- enhancement of SPM F-tests is possible
+v0.2.0 (05.06.2019)
+- performance patch: eliminated an unneccessary normalisation from the bottleneck of numerical integrations
 
 v.0.1.3 (28.03.2019)
 - enhancement of SPM F-tests is possible
