@@ -6,7 +6,6 @@
 [![GitHub release](https://img.shields.io/github/release/spisakt/pTFCE_spm.svg)](https://github.com/spisakt/pTFCE_spm/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/spisakt/pTFCE_spm.svg)](https://GitHub.com/spisakt/pTFCE_spm/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/spisakt/pTFCE_spm.svg)](https://GitHub.com/spisakt/pTFCE_spm/issues?q=is%3Aissue+is%3Aclosed)
-[![HitCount](http://hits.dwyl.io/spisakt/pTFCE_spm.svg)](http://hits.dwyl.io/spisakt/pTFCE_spm)
 
 For more information, check out the [project pages](https://spisakt.github.io/pTFCE)!
 
