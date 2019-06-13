@@ -1,5 +1,8 @@
 #change.log
 
+v0.2.1 (05.06.2019)
+- minor patch: eliminated unneccessary printing
+
 v0.2.0 (05.06.2019)
 - performance patch: eliminated an unneccessary normalisation from the bottleneck of numerical integrations
 
